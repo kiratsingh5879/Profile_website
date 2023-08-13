@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Jaskirat Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d962d094d0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+            <p>Web Developer/Programmer/Digital Marketer</p>
+            <h1>Hi, I'm <span>Jaskirat</span> </h1>
+            </div>
+            <a href="Jaskirat Resume.pdf" class="btn btn2" download="">Download Resume</a>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="myimage12.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Jaskirat Singh, a passionate Web Developer and Digital Marketer from Paonta Sahib. I'm committed to providing quality work. I love coding and constantly seek to seek areas where i can prospher . When not working, I enjoy listening music. Let's connect and collaborate!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li>C/C++</li>
+                            <li>HTML,CSS</li>
+                            <li>Data Structures</li>
+                            <li>PostgreSQL</li>
+                            <li>Digital Marketing</li>
+                            <li>Wordpress</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Ongoing(Passing Year 2024)</span><br>Bachelor of Computer Applications(BCA) At Mukand Lal National College
+                            <li><span>Intermediate(2021)</span><br>Guru Nanak Mission Public School (Paonta Sahib)</li>
+                            <li><span>Matriculation(2019)</span><br>Guru Nanak Mission Public School (Paonta Sahib)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ************************projects****************** -->
+    <div id="services"></div>
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Contact Management System Using C++</h2>
+                <p>This project uses c++ file system to store contacts permanently on system storage and are easily accesible. </p>
+                <a href="https://github.com/kiratsingh5879/Contact_management_system">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-globe"></i>
+                <h2>Profile Website</h2>
+                <p>This project aims to showcase my skills and projects.</p>
+                <a href="#header">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-wordpress"></i>
+                <h2>Blogging Website </h2>
+                <p>This project aims to provide exciting reading material on latest technology trends.</p>
+                <a href="https://www.jassblogger.online/">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ************************Contact me ****************** -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope-open"></i>kiratsingh5879@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9857415450</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/k_i_r_a_t_singh/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/jaskirat-singh-474b48282/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-left">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+</html>
